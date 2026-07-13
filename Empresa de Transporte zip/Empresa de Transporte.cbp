@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Empresa de Transporte" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Clientes/;Clientes/Clientes.h/;Clientes/Clientes.cpp/;Choferes/;Choferes/Choferes.h/;Choferes/Choferes.cpp/;Viajes/;Viajes/Viajes.h/;Viajes/Viajes.cpp/;Remises/;Remises/Remises.h/;Remises/Remises.cpp/;Pagos/;Pagos/Pagos.h/;Pagos/Pagos.cpp/;Calificaciones/;Calificaciones/Calificaciones.h/;Calificaciones/Calificaciones.cpp/;Informes/;Informes/Informes.h/;Informes/Informes.cpp/" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Empresa de Transporte" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Empresa de Transporte" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="app.cpp" />
+		<Unit filename="app.h" />
+		<Unit filename="calificaciones.cpp">
+			<Option virtualFolder="Calificaciones/Calificaciones.cpp/" />
+		</Unit>
+		<Unit filename="calificaciones.h">
+			<Option virtualFolder="Calificaciones/Calificaciones.h/" />
+		</Unit>
+		<Unit filename="calificacionesArchivo.cpp">
+			<Option virtualFolder="Calificaciones/Calificaciones.cpp/" />
+		</Unit>
+		<Unit filename="calificacionesArchivo.h">
+			<Option virtualFolder="Calificaciones/Calificaciones.h/" />
+		</Unit>
+		<Unit filename="calificacionesManager.cpp">
+			<Option virtualFolder="Calificaciones/Calificaciones.cpp/" />
+		</Unit>
+		<Unit filename="calificacionesManager.h">
+			<Option virtualFolder="Calificaciones/Calificaciones.h/" />
+		</Unit>
+		<Unit filename="choferes.cpp">
+			<Option virtualFolder="Choferes/Choferes.cpp/" />
+		</Unit>
+		<Unit filename="choferes.h">
+			<Option virtualFolder="Choferes/Choferes.h/" />
+		</Unit>
+		<Unit filename="choferesArchivo.cpp">
+			<Option virtualFolder="Choferes/Choferes.cpp/" />
+		</Unit>
+		<Unit filename="choferesArchivo.h">
+			<Option virtualFolder="Choferes/Choferes.h/" />
+		</Unit>
+		<Unit filename="choferesManager.cpp">
+			<Option virtualFolder="Choferes/Choferes.cpp/" />
+		</Unit>
+		<Unit filename="choferesManager.h">
+			<Option virtualFolder="Choferes/Choferes.h/" />
+		</Unit>
+		<Unit filename="consola.cpp" />
+		<Unit filename="consola.h" />
+		<Unit filename="clientes.cpp">
+			<Option virtualFolder="Clientes/Clientes.cpp/" />
+		</Unit>
+		<Unit filename="clientes.h">
+			<Option virtualFolder="Clientes/Clientes.h/" />
+		</Unit>
+		<Unit filename="clientesArchivo.cpp">
+			<Option virtualFolder="Clientes/Clientes.cpp/" />
+		</Unit>
+		<Unit filename="clientesArchivo.h">
+			<Option virtualFolder="Clientes/Clientes.h/" />
+		</Unit>
+		<Unit filename="clientesManager.cpp">
+			<Option virtualFolder="Clientes/Clientes.cpp/" />
+		</Unit>
+		<Unit filename="clientesManager.h">
+			<Option virtualFolder="Clientes/Clientes.h/" />
+		</Unit>
+		<Unit filename="fecha.cpp" />
+		<Unit filename="fecha.h" />
+		<Unit filename="informesManager.cpp">
+			<Option virtualFolder="Informes/Informes.cpp/" />
+		</Unit>
+		<Unit filename="informesManager.h">
+			<Option virtualFolder="Informes/Informes.h/" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="menu.h" />
+		<Unit filename="menuCalificaciones.cpp">
+			<Option virtualFolder="Calificaciones/Calificaciones.cpp/" />
+		</Unit>
+		<Unit filename="menuCalificaciones.h">
+			<Option virtualFolder="Calificaciones/Calificaciones.h/" />
+		</Unit>
+		<Unit filename="menuCalificacionesConsultas.cpp">
+			<Option virtualFolder="Calificaciones/Calificaciones.cpp/" />
+		</Unit>
+		<Unit filename="menuCalificacionesConsultas.h">
+			<Option virtualFolder="Calificaciones/Calificaciones.h/" />
+		</Unit>
+		<Unit filename="menuCalificacionesGestion.cpp">
+			<Option virtualFolder="Calificaciones/Calificaciones.cpp/" />
+		</Unit>
+		<Unit filename="menuCalificacionesGestion.h">
+			<Option virtualFolder="Calificaciones/Calificaciones.h/" />
+		</Unit>
+		<Unit filename="menuCalificacionesListados.cpp">
+			<Option virtualFolder="Calificaciones/Calificaciones.cpp/" />
+		</Unit>
+		<Unit filename="menuCalificacionesListados.h">
+			<Option virtualFolder="Calificaciones/Calificaciones.h/" />
+		</Unit>
+		<Unit filename="menuChoferes.cpp">
+			<Option virtualFolder="Choferes/Choferes.cpp/" />
+		</Unit>
+		<Unit filename="menuChoferes.h">
+			<Option virtualFolder="Choferes/Choferes.h/" />
+		</Unit>
+		<Unit filename="menuChoferesConsultas.cpp">
+			<Option virtualFolder="Choferes/Choferes.cpp/" />
+		</Unit>
+		<Unit filename="menuChoferesConsultas.h">
+			<Option virtualFolder="Choferes/Choferes.h/" />
+		</Unit>
+		<Unit filename="menuChoferesGestion.cpp">
+			<Option virtualFolder="Choferes/Choferes.cpp/" />
+		</Unit>
+		<Unit filename="menuChoferesGestion.h">
+			<Option virtualFolder="Choferes/Choferes.h/" />
+		</Unit>
+		<Unit filename="menuChoferesListados.cpp">
+			<Option virtualFolder="Choferes/Choferes.cpp/" />
+		</Unit>
+		<Unit filename="menuChoferesListados.h">
+			<Option virtualFolder="Choferes/Choferes.h/" />
+		</Unit>
+		<Unit filename="menuClientes.cpp">
+			<Option virtualFolder="Clientes/Clientes.cpp/" />
+		</Unit>
+		<Unit filename="menuClientes.h">
+			<Option virtualFolder="Clientes/Clientes.h/" />
+		</Unit>
+		<Unit filename="menuClientesConsultas.cpp">
+			<Option virtualFolder="Clientes/Clientes.cpp/" />
+		</Unit>
+		<Unit filename="menuClientesConsultas.h">
+			<Option virtualFolder="Clientes/Clientes.h/" />
+		</Unit>
+		<Unit filename="menuClientesGestion.cpp">
+			<Option virtualFolder="Clientes/Clientes.cpp/" />
+		</Unit>
+		<Unit filename="menuClientesGestion.h">
+			<Option virtualFolder="Clientes/Clientes.h/" />
+		</Unit>
+		<Unit filename="menuClientesListados.cpp">
+			<Option virtualFolder="Clientes/Clientes.cpp/" />
+		</Unit>
+		<Unit filename="menuClientesListados.h">
+			<Option virtualFolder="Clientes/Clientes.h/" />
+		</Unit>
+		<Unit filename="menuInformes.cpp">
+			<Option virtualFolder="Informes/Informes.cpp/" />
+		</Unit>
+		<Unit filename="menuInformes.h">
+			<Option virtualFolder="Informes/Informes.h/" />
+		</Unit>
+		<Unit filename="menuPagos.cpp">
+			<Option virtualFolder="Pagos/Pagos.cpp/" />
+		</Unit>
+		<Unit filename="menuPagos.h">
+			<Option virtualFolder="Pagos/Pagos.h/" />
+		</Unit>
+		<Unit filename="menuPagosConsultas.cpp">
+			<Option virtualFolder="Pagos/Pagos.cpp/" />
+		</Unit>
+		<Unit filename="menuPagosConsultas.h">
+			<Option virtualFolder="Pagos/Pagos.h/" />
+		</Unit>
+		<Unit filename="menuPagosGestion.cpp">
+			<Option virtualFolder="Pagos/Pagos.cpp/" />
+		</Unit>
+		<Unit filename="menuPagosGestion.h">
+			<Option virtualFolder="Pagos/Pagos.h/" />
+		</Unit>
+		<Unit filename="menuPagosListados.cpp">
+			<Option virtualFolder="Pagos/Pagos.cpp/" />
+		</Unit>
+		<Unit filename="menuPagosListados.h">
+			<Option virtualFolder="Pagos/Pagos.h/" />
+		</Unit>
+		<Unit filename="menuRemises.cpp">
+			<Option virtualFolder="Remises/Remises.cpp/" />
+		</Unit>
+		<Unit filename="menuRemises.h">
+			<Option virtualFolder="Remises/Remises.h/" />
+		</Unit>
+		<Unit filename="menuRemisesConsultas.cpp">
+			<Option virtualFolder="Remises/Remises.cpp/" />
+		</Unit>
+		<Unit filename="menuRemisesConsultas.h">
+			<Option virtualFolder="Remises/Remises.h/" />
+		</Unit>
+		<Unit filename="menuRemisesGestion.cpp">
+			<Option virtualFolder="Remises/Remises.cpp/" />
+		</Unit>
+		<Unit filename="menuRemisesGestion.h">
+			<Option virtualFolder="Remises/Remises.h/" />
+		</Unit>
+		<Unit filename="menuRemisesListados.cpp">
+			<Option virtualFolder="Remises/Remises.cpp/" />
+		</Unit>
+		<Unit filename="menuRemisesListados.h">
+			<Option virtualFolder="Remises/Remises.h/" />
+		</Unit>
+		<Unit filename="menuViajes.cpp">
+			<Option virtualFolder="Viajes/Viajes.cpp/" />
+		</Unit>
+		<Unit filename="menuViajes.h">
+			<Option virtualFolder="Viajes/Viajes.h/" />
+		</Unit>
+		<Unit filename="menuViajesConsultas.cpp">
+			<Option virtualFolder="Viajes/Viajes.cpp/" />
+		</Unit>
+		<Unit filename="menuViajesConsultas.h">
+			<Option virtualFolder="Viajes/Viajes.h/" />
+		</Unit>
+		<Unit filename="menuViajesGestion.cpp">
+			<Option virtualFolder="Viajes/Viajes.cpp/" />
+		</Unit>
+		<Unit filename="menuViajesGestion.h">
+			<Option virtualFolder="Viajes/Viajes.h/" />
+		</Unit>
+		<Unit filename="menuViajesListados.cpp">
+			<Option virtualFolder="Viajes/Viajes.cpp/" />
+		</Unit>
+		<Unit filename="menuViajesListados.h">
+			<Option virtualFolder="Viajes/Viajes.h/" />
+		</Unit>
+		<Unit filename="pagos.cpp">
+			<Option virtualFolder="Pagos/Pagos.cpp/" />
+		</Unit>
+		<Unit filename="pagos.h">
+			<Option virtualFolder="Pagos/Pagos.h/" />
+		</Unit>
+		<Unit filename="pagosArchivo.cpp">
+			<Option virtualFolder="Pagos/Pagos.cpp/" />
+		</Unit>
+		<Unit filename="pagosArchivo.h">
+			<Option virtualFolder="Pagos/Pagos.h/" />
+		</Unit>
+		<Unit filename="pagosManager.cpp">
+			<Option virtualFolder="Pagos/Pagos.cpp/" />
+		</Unit>
+		<Unit filename="pagosManager.h">
+			<Option virtualFolder="Pagos/Pagos.h/" />
+		</Unit>
+		<Unit filename="personas.cpp" />
+		<Unit filename="personas.h" />
+		<Unit filename="remises.cpp">
+			<Option virtualFolder="Remises/Remises.cpp/" />
+		</Unit>
+		<Unit filename="remises.h">
+			<Option virtualFolder="Remises/Remises.h/" />
+		</Unit>
+		<Unit filename="remisesArchivo.cpp">
+			<Option virtualFolder="Remises/Remises.cpp/" />
+		</Unit>
+		<Unit filename="remisesArchivo.h">
+			<Option virtualFolder="Remises/Remises.h/" />
+		</Unit>
+		<Unit filename="remisesManager.cpp">
+			<Option virtualFolder="Remises/Remises.cpp/" />
+		</Unit>
+		<Unit filename="remisesManager.h">
+			<Option virtualFolder="Remises/Remises.h/" />
+		</Unit>
+		<Unit filename="rlutil.h" />
+		<Unit filename="viajes.cpp">
+			<Option virtualFolder="Viajes/Viajes.cpp/" />
+		</Unit>
+		<Unit filename="viajes.h">
+			<Option virtualFolder="Viajes/Viajes.h/" />
+		</Unit>
+		<Unit filename="viajesArchivo.cpp">
+			<Option virtualFolder="Viajes/Viajes.cpp/" />
+		</Unit>
+		<Unit filename="viajesArchivo.h">
+			<Option virtualFolder="Viajes/Viajes.h/" />
+		</Unit>
+		<Unit filename="viajesManager.cpp">
+			<Option virtualFolder="Viajes/Viajes.cpp/" />
+		</Unit>
+		<Unit filename="viajesManager.h">
+			<Option virtualFolder="Viajes/Viajes.h/" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
