@@ -100,11 +100,18 @@ void CalificacionesManager::listarCalificaciones(){
 void CalificacionesManager::listarCalificacionesOrdenadasPorPuntaje(){
 
     int cantidad = _repo.contarRegistros();
-    Calificaciones* calificaciones = new Calificaciones[cantidad];
-    int cantidadActivas = cargarCalificacionesActivas(calificaciones, cantidad);
 
     limpiarPantalla();
     cout << "---- LISTANDO CALIFICACIONES (DE MENOS A MAS PUNTAJE) ----" << endl;
+
+    if(cantidad == -1){
+        cout << "No hay calificaciones registradas." << endl;
+        system("pause");
+        return;
+    }
+
+    Calificaciones* calificaciones = new Calificaciones[cantidad];
+    int cantidadActivas = cargarCalificacionesActivas(calificaciones, cantidad);
 
     for(int x = 0; x < cantidadActivas - 1; x++){
         for(int y = 0; y < cantidadActivas - 1 - x; y++){

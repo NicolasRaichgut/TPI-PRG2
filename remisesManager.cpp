@@ -158,11 +158,18 @@ void RemisesManager::listarRemises(){
 void RemisesManager::listarRemisesOrdenadosPorFechaLanzamiento(){
 
     int cantidad = _repo.contarRegistros();
-    Remises* remises = new Remises[cantidad];
-    int cantidadActivos = cargarRemisesActivos(remises, cantidad);
 
     limpiarPantalla();
     cout << "---- LISTANDO REMISES (DEL MAS NUEVO AL MAS VIEJO) ----" << endl;
+
+    if(cantidad == -1){
+        cout << "No hay remises registrados." << endl;
+        system("pause");
+        return;
+    }
+
+    Remises* remises = new Remises[cantidad];
+    int cantidadActivos = cargarRemisesActivos(remises, cantidad);
 
     for(int x = 0; x < cantidadActivos - 1; x++){
         for(int y = 0; y < cantidadActivos - 1 - x; y++){
@@ -198,11 +205,18 @@ void RemisesManager::listarRemisesOrdenadosPorFechaLanzamiento(){
 void RemisesManager::listarRemisesOrdenadosPorCapacidad(){
 
     int cantidad = _repo.contarRegistros();
-    Remises* remises = new Remises[cantidad];
-    int cantidadActivos = cargarRemisesActivos(remises, cantidad);
 
     limpiarPantalla();
     cout << "---- LISTANDO REMISES (DE MENOS A MAS CAPACIDAD) ----" << endl;
+
+    if(cantidad == -1){
+        cout << "No hay remises registrados." << endl;
+        system("pause");
+        return;
+    }
+
+    Remises* remises = new Remises[cantidad];
+    int cantidadActivos = cargarRemisesActivos(remises, cantidad);
 
     for(int x = 0; x < cantidadActivos - 1; x++){
         for(int y = 0; y < cantidadActivos - 1 - x; y++){

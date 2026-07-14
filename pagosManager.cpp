@@ -100,11 +100,18 @@ void PagosManager::listarPagos(){
 void PagosManager::listarPagosOrdenadosPorMonto(){
     
     int cantidad = _repo.contarRegistros();
-    Pagos* pagos = new Pagos[cantidad];
-    int cantidadActivos = cargarPagosActivos(pagos, cantidad);
-    
+
     limpiarPantalla();
     cout << "---- LISTANDO PAGOS (DE MENOS A MAS MONTO) ----" << endl;
+
+    if(cantidad == -1){
+        cout << "No hay pagos registrados." << endl;
+        system("pause");
+        return;
+    }
+
+    Pagos* pagos = new Pagos[cantidad];
+    int cantidadActivos = cargarPagosActivos(pagos, cantidad);
     
     for(int x = 0; x < cantidadActivos - 1; x++){
         for(int y = 0; y < cantidadActivos - 1 - x; y++){

@@ -117,11 +117,18 @@ void ViajesManager::listarViajes(){
 void ViajesManager::listarViajesOrdenadosPorFecha(){
 
     int cantidad = _repo.contarRegistros();
-    Viajes* viajes = new Viajes[cantidad];
-    int cantidadActivos = cargarViajesActivos(viajes, cantidad);
 
     limpiarPantalla();
     cout << "---- LISTANDO VIAJES (DEL MAS RECIENTE AL MAS VIEJO) ----" << endl;
+
+    if(cantidad == -1){
+        cout << "No hay viajes registrados." << endl;
+        system("pause");
+        return;
+    }
+
+    Viajes* viajes = new Viajes[cantidad];
+    int cantidadActivos = cargarViajesActivos(viajes, cantidad);
 
     for(int x = 0; x < cantidadActivos - 1; x++){
         for(int y = 0; y < cantidadActivos - 1 - x; y++){

@@ -501,7 +501,7 @@ void InformesManager::informeTop5ChoferesConMasViajes(){
     limpiarPantalla();
     cout << "---- INFORME: TOP 5 CHOFERES CON MAS VIAJES ----" << endl;
 
-    if(cantidadViajes == 0){
+    if(cantidadViajes == -1 || cantidadViajes == 0){
         cout << "No hay viajes registrados." << endl;
         system("pause");
         return;
@@ -598,7 +598,7 @@ void InformesManager::informeTop5ClientesConMasViajes(){
     limpiarPantalla();
     cout << "---- INFORME: TOP 5 CLIENTES CON MAS VIAJES ----" << endl;
 
-    if(cantidadViajes == 0){
+    if(cantidadViajes == -1 || cantidadViajes == 0){
         cout << "No hay viajes registrados." << endl;
         system("pause");
         return;

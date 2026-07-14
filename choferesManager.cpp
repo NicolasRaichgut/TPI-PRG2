@@ -206,11 +206,18 @@ void ChoferesManager::listarChoferes(){
 void ChoferesManager::listarChoferesOrdenadosPorNombre(){
 
     int cantidad = _repo.contarRegistros();
-    Choferes* choferes = new Choferes[cantidad];
-    int cantidadActivos = cargarChoferesActivos(choferes, cantidad);
 
     limpiarPantalla();
     cout << "---- LISTANDO CHOFERES (A-Z POR NOMBRE) ----" << endl;
+
+    if(cantidad == -1){
+        cout << "No hay choferes registrados." << endl;
+        system("pause");
+        return;
+    }
+
+    Choferes* choferes = new Choferes[cantidad];
+    int cantidadActivos = cargarChoferesActivos(choferes, cantidad);
 
     for(int x = 0; x < cantidadActivos - 1; x++){
         for(int y = 0; y < cantidadActivos - 1 - x; y++){
@@ -235,11 +242,18 @@ void ChoferesManager::listarChoferesOrdenadosPorNombre(){
 void ChoferesManager::listarChoferesOrdenadosPorFechaNacimiento(){
 
     int cantidad = _repo.contarRegistros();
-    Choferes* choferes = new Choferes[cantidad];
-    int cantidadActivos = cargarChoferesActivos(choferes, cantidad);
 
     limpiarPantalla();
     cout << "---- LISTANDO CHOFERES (DEL MAS JOVEN AL MAS VIEJO) ----" << endl;
+
+    if(cantidad == -1){
+        cout << "No hay choferes registrados." << endl;
+        system("pause");
+        return;
+    }
+
+    Choferes* choferes = new Choferes[cantidad];
+    int cantidadActivos = cargarChoferesActivos(choferes, cantidad);
 
     for(int x = 0; x < cantidadActivos - 1; x++){
         for(int y = 0; y < cantidadActivos - 1 - x; y++){

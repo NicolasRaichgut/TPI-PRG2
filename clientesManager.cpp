@@ -174,11 +174,18 @@ void ClientesManager::listarClientes(){
 void ClientesManager::listarClientesOrdenadosPorNombre(){
 
     int cantidad = _repo.contarRegistros();
-    Clientes* clientes = new Clientes[cantidad];
-    int cantidadActivos = cargarClientesActivos(clientes, cantidad);
 
     limpiarPantalla();
     cout << "---- LISTANDO CLIENTES (A-Z POR NOMBRE) ----" << endl;
+
+    if(cantidad == -1){
+        cout << "No hay clientes registrados." << endl;
+        system("pause");
+        return;
+    }
+
+    Clientes* clientes = new Clientes[cantidad];
+    int cantidadActivos = cargarClientesActivos(clientes, cantidad);
 
     for(int x = 0; x < cantidadActivos - 1; x++){
         for(int y = 0; y < cantidadActivos - 1 - x; y++){
@@ -204,11 +211,18 @@ void ClientesManager::listarClientesOrdenadosPorNombre(){
 void ClientesManager::listarClientesOrdenadosPorFechaNacimiento(){
 
     int cantidad = _repo.contarRegistros();
-    Clientes* clientes = new Clientes[cantidad];
-    int cantidadActivos = cargarClientesActivos(clientes, cantidad);
 
     limpiarPantalla();
     cout << "---- LISTANDO CLIENTES (DEL MAS JOVEN AL MAS VIEJO) ----" << endl;
+
+    if(cantidad == -1){
+        cout << "No hay clientes registrados." << endl;
+        system("pause");
+        return;
+    }
+
+    Clientes* clientes = new Clientes[cantidad];
+    int cantidadActivos = cargarClientesActivos(clientes, cantidad);
 
     for(int x = 0; x < cantidadActivos - 1; x++){
         for(int y = 0; y < cantidadActivos - 1 - x; y++){
